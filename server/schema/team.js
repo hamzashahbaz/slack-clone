@@ -8,6 +8,9 @@ export default `
         ok: Boolean!
         errors: [Error!]
     }
+    type Query {
+        teams: [Team!]!
+    }
     type Mutation {
         createTeam(name: String!): Boolean!
     }
